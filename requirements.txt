@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+pydantic
+langgraph
+openai
+faiss-cpu
+numpy
+pypdf
+python-docx
+Pillow
+sqlalchemy
+python-multipart
+gradio
+pytesseract
