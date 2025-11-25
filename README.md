@@ -318,13 +318,13 @@ All tests should pass (core parsing, guardrails, scoring).
 Some known limitations and future ideas:
 
 - **Bias/fairness auditing**:   
-  Currently mitigated mainly via prompts and guidelines. A dedicated “BiasCheckAgent” could review assessments for potentially biased language.
+    Currently mitigated mainly via prompts and guidelines. A dedicated “BiasCheckAgent” could review assessments for potentially biased language.
 - **More role types**:   
-  The ML guidelines are role-specific; similar files could be added for backend, frontend, data engineering, etc.
+    The ML guidelines are role-specific; similar files could be added for backend, frontend, data engineering, etc.
 - **Richer analytics**:   
-  The database can be used to analyze average scores per role, track how many “strong fit” candidates appear, etc.
+    The database can be used to analyze average scores per role, track how many “strong fit” candidates appear, etc.
 - **Conversation memory**:   
-  For a chat-based UI, conversational memory could be introduced so reviewers can ask follow-up questions about each assessment.
+    For a chat-based UI, conversational memory could be introduced so reviewers can ask follow-up questions about each assessment.
 ---
 
 ## 8. Mapping Back to the Assignment Requirements
