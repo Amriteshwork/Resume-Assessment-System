@@ -39,8 +39,10 @@ def parse_image(file_bytes: bytes) -> str:
         text = pytesseract.image_to_string(image)
         return text if text.strip() else "[OCR found no text]"
     except ImportError:
-        return "[OCR not available: `pip install pytesseract`]"
+        return "[OCR skipped: pytesseract library not installed]"
     except Exception as e:
+        if "tesseract is not installed" in str(e).lower() or "not found" in str(e).lower():
+             return "[OCR skipped: Tesseract binary not found on system. Please install Tesseract-OCR.]"
         return f"[OCR Error: {e}]"
 
 def parse_resume_text(file_bytes: bytes, filename: str) -> str:
