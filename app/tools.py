@@ -91,7 +91,7 @@ def extract_resume_structured(resume_text: str) -> Dict[str, Any]:
 
     Resume:
     {resume_text[:4000]} 
-    """ # Truncate to avoid context limit issues in demo
+    """
     return call_llm_json(
     prompt,
     system_prompt=(
@@ -123,7 +123,6 @@ def extract_jd_structured(jd_text: str) -> Dict[str, Any]:
 )
 
 # Scoring
-
 def compute_scores(
     resume: Dict[str, Any],
     jd: Dict[str, Any],
