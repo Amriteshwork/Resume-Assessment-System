@@ -93,10 +93,7 @@ The assessment pipeline is modeled as five collaborating agents:
      - Computes **skills overlap**.
      - Asks the LLM for `relevant_years` & `seniority_fit` (via JSON mode).
      - Uses a fixed formula:
-
-        > $$
-            \text{overall\_score} = 0.5 \cdot \text{skills\_score} + 0.3 \cdot \text{experience\_score} + 0.2 \cdot \text{seniority\_score}
-          $$
+      > `overall_score = 0.5 * skills_score + 0.3 * experience_score + 0.2 * seniority_score`
 
 
 4. **ReviewerAgent**
