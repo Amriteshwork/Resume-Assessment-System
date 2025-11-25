@@ -123,7 +123,7 @@ The assessment pipeline is modeled as five collaborating agents:
 The overall orchestration is defined in `app/graph.py` using LangGraph’s `StateGraph`:
 
 ```text
-parse  →  score  →  assess  →  guardrail_and_save  →  END
+parse  ->  score  ->  assess  ->  guardrail_and_save  ->  END
 ```
 
 The shared AgentState includes:
