@@ -94,9 +94,10 @@ The assessment pipeline is modeled as five collaborating agents:
      - Asks the LLM for `relevant_years` & `seniority_fit` (via JSON mode).
      - Uses a fixed formula:
 
-       \[
-       overall = 0.5 \cdot skills\_score + 0.3 \cdot experience\_score + 0.2 \cdot seniority\_score
-       \]
+        > $$
+            \text{overall\_score} = 0.5 \cdot \text{skills\_score} + 0.3 \cdot \text{experience\_score} + 0.2 \cdot \text{seniority\_score}
+          $$
+
 
 4. **ReviewerAgent**
    - Input: structured resume + JD + scores.
