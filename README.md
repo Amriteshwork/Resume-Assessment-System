@@ -259,7 +259,7 @@ A small pytest suite to validate core logic:
   ```bash
   pip install -r requirements.txt
   ```
-- Set your OpenAI API key:
+- (Optional) Set your OpenAI API key:
   ```bash
   export OPENAI_API_KEY="sk-..."
   ```
